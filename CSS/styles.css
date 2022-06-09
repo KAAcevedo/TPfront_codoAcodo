@@ -62,7 +62,7 @@ h1{
 }
 
 h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem 2rem 3.5rem;
 }
 
@@ -84,9 +84,10 @@ img {
 
 iframe {
     display: flex;
-    width: auto;
+    width: 100%;
+    height: 40rem;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
 }
 
 #s2 {
@@ -184,7 +185,6 @@ iframe {
 #s3 {
     background-color: #9594CB;
     grid-area: tres;
-
 }
 
 #s4 {
@@ -262,7 +262,6 @@ textarea {
 
 @media screen and (max-width:640px){
     /* Pantalla chica - Celular */
-    
     .grid-container{
         grid-template-areas:"uno uno uno uno" 
                             "dos dos dos dos" 
@@ -279,7 +278,6 @@ textarea {
 
 @media screen and (max-width:1024px) and (min-width:640px){
     /* Pantalla mediana - Tablet x ej. */
-    
     .grid-container{
         grid-template-areas:"uno uno tres tres" 
                             "dos dos tres tres" 
@@ -288,17 +286,50 @@ textarea {
                             "cua cua cinc cinc"
                             "seis seis seis seis";
     }
+
+    #s6 {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:1024px){
     /* Pantalla grande */
-    
     .grid-container{
         grid-template-areas:"uno uno tres tres" 
                             "dos dos tres tres" 
                             "dos dos tres tres"
-                            "cua cua tres tres"
+                            "cua cua cinc cinc"
                             "cua cua cinc cinc"
                             "seis seis cinc cinc";
     }
+
+    iframe {
+        border-radius: 0%;
+    }
+
+    h1{
+        font-size: 3rem;
+        padding: 3rem;
+        padding-bottom: 0;
+    }
+    
+    h3{
+        font-size: 2rem;
+        padding: 0.5rem 1rem 2rem 3.5rem;
+    }
+
+    #s3 {
+        text-align: center;
+        display: grid;
+    }
+
+    #s5 {
+        text-align: center;
+
+    }
+
+    #s6 {
+        text-align: center;
+    }
+
 }
